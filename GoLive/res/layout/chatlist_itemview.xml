@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:id="@+id/itemviewRL"
+    		android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <LinearLayout
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            android:visibility="gone">
+            
+            <TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+	            android:id="@+id/_idTV"/>
+	
+	        <TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+	            android:id="@+id/fuidstrTV"/>
+	
+	        <TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+	            android:id="@+id/typeTV"/>
+	        
+	        <TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+	            android:id="@+id/fuidTV"/>
+            
+        </LinearLayout>
+
+        <RelativeLayout android:id="@+id/titleRL"
+            android:layout_width="fill_parent"
+            android:layout_height="32dip">
+
+            <TextView
+                android:id="@+id/titleTV"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            		android:layout_marginLeft="5dip"
+            		android:layout_marginTop="5dip"
+                android:textColor="@color/black"
+                android:textSize="32px" />
+            
+            <TextView 
+                android:id="@+id/SAY"
+                android:layout_toRightOf="@id/titleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            		android:layout_marginTop="5dip"
+                android:textColor="@color/black"
+                android:text=" : "
+                android:textSize="32px"/>
+            
+		    <TextView android:id="@+id/datelineTV"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentRight="true"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textColor="@color/black"
+			    android:textSize="18px" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/textRL"
+            android:layout_below="@id/titleRL"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+	        <TextView
+	            android:id="@+id/said_left_TV"
+	            android:layout_width="wrap_content"
+	            android:layout_height="32px"
+	            android:background="@drawable/chat_l"
+	            android:textSize="25px" android:visibility="gone"/>
+            <TextView
+                android:id="@+id/textTV"
+                android:layout_width="wrap_content"
+                android:maxWidth="225dip"
+                android:layout_height="32dip"
+	            android:layout_toRightOf="@id/said_left_TV"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip"
+                android:textSize="25px"
+                android:textColor="@color/black"
+                android:gravity="center_vertical" />
+	        <TextView
+	            android:id="@+id/said_right_TV"
+	            android:layout_toRightOf="@id/textTV"
+	            android:layout_width="wrap_content"
+	            android:layout_height="32px"
+	            android:background="@drawable/chat_r"
+	            android:textSize="25px" android:visibility="gone"/>
+	
+        </RelativeLayout>
+        
+        <RelativeLayout android:id="@+id/voiceRL"
+            android:layout_below="@id/titleRL"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone">
+            <ImageButton
+	            android:id="@+id/voiceIB"
+	            android:layout_width="36px"
+	            android:layout_height="36px"
+            		android:layout_marginLeft="5dip"
+            		android:layout_marginBottom="5dip"
+	            android:background="@drawable/type_voice" />
+	
+        </RelativeLayout>
+        
+        <RelativeLayout android:id="@+id/photoRL"
+            android:layout_below="@id/titleRL"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone">
+            <ImageView
+	            android:id="@+id/photoIV"
+	            android:layout_width="64px"
+	            android:layout_height="64px"
+            		android:layout_marginLeft="5dip"
+            		android:layout_marginBottom="5dip"
+	            android:background="@drawable/type_photo" />
+	
+        </RelativeLayout>
+        
+        
+
+</RelativeLayout>

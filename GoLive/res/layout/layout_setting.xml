@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settingLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/logout"
+        style="@style/StyleGreenButton"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="28dip"
+        android:layout_marginRight="28dip"
+        android:layout_marginTop="8dip"
+        android:text="@string/setting_Logout_str" />
+
+    <Button
+        android:id="@+id/setSpacenote"
+        style="@style/StyleBlueButton"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="28dip"
+        android:layout_marginRight="28dip"
+        android:layout_marginTop="8dip"
+        android:layout_below="@id/logout"
+        android:text="@string/setting_Spacenote_str" />
+
+    <Button
+        android:id="@+id/getGreat"
+        style="@style/StyleBlueButton"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="28dip"
+        android:layout_marginRight="28dip"
+        android:layout_marginTop="8dip"
+        android:layout_below="@id/setSpacenote"
+        android:text="@string/setting_getGreat_str"/>
+
+</RelativeLayout>

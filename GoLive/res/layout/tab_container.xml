@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TabContainerLL"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:background="@drawable/back_tab"
+    android:orientation="horizontal" >
+
+    <LinearLayout android:id="@+id/talkLL"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/talkIB"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ico_talk" />
+
+        <TextView
+            android:id="@+id/talkTV"
+			style="@style/StyleShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_talk" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/contactLL"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/contactIB"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ico_contact" />
+
+        <TextView
+            android:id="@+id/contactTV"
+			style="@style/StyleShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_contact" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/findLL"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/findIB"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/bt_search" />
+
+        <TextView
+            android:id="@+id/findTV"
+			style="@style/StyleShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_find" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/settingLL"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/settingIB"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ico_setting" />
+
+        <TextView
+            android:id="@+id/settingTV"
+			style="@style/StyleShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_setting" />
+    </LinearLayout>
+
+</LinearLayout>

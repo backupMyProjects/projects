@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/findLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/viaAccount"
+        style="@style/StyleBlueButton"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="28dip"
+        android:layout_marginRight="28dip"
+        android:layout_marginTop="8dip"
+        android:text="@string/findfriendViaAcc" />
+
+    <Button
+        android:id="@+id/viaArea"
+        style="@style/StyleBlueButton"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="28dip"
+        android:layout_marginRight="28dip"
+        android:layout_marginTop="8dip"
+        android:layout_below="@+id/viaAccount"
+        android:text="@string/findfriendViaArea" />
+
+    <Button
+        android:id="@+id/viaMap"
+        style="@style/StyleBlueButton"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="28dip"
+        android:layout_marginRight="28dip"
+        android:layout_marginTop="8dip"
+        android:layout_below="@+id/viaArea"
+        android:text="@string/findfriendViaMap" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/itemviewRL"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="48dip"
+            android:layout_height="52dip"
+            android:src="@drawable/ico_contact_2" />
+
+        <LinearLayout
+            android:id="@+id/dataLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="7dip"
+            android:layout_toRightOf="@id/avatar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/findfriend_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="20dip" />
+
+            <TextView
+                android:id="@+id/findfriend_spacenote"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:textColor="@color/black"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+        <Button android:id="@+id/addFriendB"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dip"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_add" />
+    </RelativeLayout>
+
+</LinearLayout>

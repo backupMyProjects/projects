@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRL"
+    style="@style/StyleLayout">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/account_TV"
+                style="@style/StyleLabel"
+                android:text="@string/login_acc"/>
+
+            <EditText
+                android:id="@+id/account_ET"
+                style="@style/StyleInput"
+                android:layout_alignBaseline="@id/account_TV"
+                android:text="@string/acc"
+                android:layout_toRightOf="@id/account_TV" >
+                <requestFocus />
+            </EditText>
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/password_TV"
+                style="@style/StyleLabel"
+                android:text="@string/login_pwd"/>
+
+            <EditText
+                android:id="@+id/password_ET"
+                style="@style/StyleInput"
+                android:layout_alignBaseline="@id/password_TV"
+                android:layout_toRightOf="@id/password_TV"
+                android:inputType="textPassword"
+                android:text="@string/pwd" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/loginB"
+                style="@style/StyleBlueButton"
+                android:text="@string/login" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/registerB"
+                style="@style/StyleGreenButton"
+                android:text="@string/login_reg" />
+        </TableRow>
+    </TableLayout>
+	
+ 	<com.golive.widget.TabContainer  
+	    android:id="@+id/TabContainer"
+	    android:layout_alignParentBottom="true"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+    />
+        
+	<ProgressBar android:id="@+id/progressBar"
+		style="?android:attr/progressBarStyleHorizontal" 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:indeterminate="false"
+		android:max="10" android:padding="4dip" android:visibility="gone" />
+
+</RelativeLayout>

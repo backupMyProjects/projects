@@ -1,0 +1,9 @@
+#Wed Aug 08 00:31:55 CST 2012
+eclipse.preferences.version=1
+encoding//src/com/golive/GoLiveActivity.java=UTF-8
+encoding//src/com/golive/service/ChatService.java=UTF-8
+encoding//src/com/golive/service/TalkRoomService.java=UTF-8
+encoding//src/com/golive/util/CommonFunctions.java=UTF-8
+encoding//src/com/golive/util/GeneralXmlPullParser.java=UTF-8
+encoding//src/com/golive/util/HttpClientConnector.java=UTF-8
+encoding//src/com/golive/util/Toolets.java=UTF-8
