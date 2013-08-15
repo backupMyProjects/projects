@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout android:id="@+id/bannerLayout"
+		android:background="@drawable/header"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true">
+		
+		<ImageButton android:id="@+id/bannerBack"
+			android:background="@drawable/back_button"
+			android:layout_margin="8dip"
+			android:layout_centerVertical="true" 
+			android:layout_alignParentLeft="true" android:paddingLeft="8dp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		
+		<TextView android:id="@+id/bannerTitle"
+			android:textColor="@color/white"
+			android:layout_centerVertical="true" 
+			android:layout_centerHorizontal="true"
+			android:layout_marginRight="60sp"
+			android:textSize="20dip"
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" />
+		
+		<ImageButton android:id="@+id/bannerFunction"
+			android:background="@drawable/people"
+			android:layout_centerVertical="true" 
+			android:layout_alignParentRight="true" android:paddingRight="8dp"
+			android:layout_width="32dp" android:layout_height="32dp" />
+		
+		<RelativeLayout android:id="@+id/findfriendAreaLayout"
+		    android:layout_toRightOf="@id/bannerBack"
+	    		android:visibility="gone"
+	    		android:layout_marginLeft="8dp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+            
+	        <Spinner 
+		        android:id="@+id/searchArea_Spinner"
+		        android:layout_width="150dp"
+		        android:layout_height="wrap_content"
+		        android:prompt="@string/searchArea"
+		    />
+            
+            <Button 
+            		android:id="@+id/searchArea_BT"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+	        		android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="8dp"
+                android:background="@drawable/search"
+            />
+            <Button 
+	    			android:visibility="gone"
+            		android:id="@+id/searchAreaNextPage_BT"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_toLeftOf="@id/searchArea_BT"
+				android:layout_marginRight="8dp"
+				android:layout_centerVertical="true"
+                android:background="@drawable/right"
+            />
+            <Button 
+	    			android:visibility="gone"
+            		android:id="@+id/searchAreaPrePage_BT"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_toLeftOf="@id/searchAreaNextPage_BT"
+				android:layout_marginRight="8dp"
+				android:layout_centerVertical="true"
+                android:background="@drawable/left"
+            />
+	        
+	    </RelativeLayout>
+		
+		<RelativeLayout android:id="@+id/findfriendAccountLayout"
+		    android:layout_toRightOf="@id/bannerBack"
+		    android:layout_marginLeft="10dp"
+	    		android:visibility="gone"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+	        
+	        <EditText
+                android:id="@+id/searchAcc_ET"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="@string/searchAcc_ET_str" />
+            
+            <Button 
+            		android:id="@+id/searchAcc_BT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+	        		android:layout_alignParentRight="true"
+                android:text="@string/searchAcc_BT_str" />
+	        
+	    </RelativeLayout>
+		
+	</RelativeLayout>
+	
+    <RelativeLayout android:id="@+id/functionsLayout" 
+		android:layout_alignParentBottom="true" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" >
+        
+		
+	    <LinearLayout android:id="@+id/normalFunctionLayout" 
+			android:orientation="horizontal"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+		
+		    <ImageButton android:id="@+id/messageB"
+				android:background="@drawable/chatroomlist"
+				android:layout_width="80dp" android:layout_height="48dp" />
+		    <ImageButton android:id="@+id/contactB"
+				android:background="@drawable/contact"
+				android:layout_width="80dp" android:layout_height="48dp" />
+		    <ImageButton android:id="@+id/findB"
+				android:background="@drawable/contactadd"
+				android:layout_width="80dp" android:layout_height="48dp" />
+		    <ImageButton android:id="@+id/settingB"
+				android:background="@drawable/setting"
+				android:layout_width="80dp" android:layout_height="48dp" />
+	    
+		</LinearLayout>
+	    
+	    
+	</RelativeLayout>
+    
+	<LinearLayout android:id="@+id/contentLayout" 
+	    android:background="@drawable/background"
+		android:layout_below="@id/bannerLayout" 
+		android:layout_above="@id/functionsLayout" 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" >
+		
+	    <RelativeLayout android:id="@+id/settingLayout"
+	        android:visibility="gone"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+		    
+	        <Button
+		        android:id="@+id/logout"
+		        android:background="@drawable/logout"
+		        android:layout_width="fill_parent"
+		        android:layout_height="48dip"
+		        android:layout_marginLeft="8dip"
+		        android:layout_marginRight="8dip"
+		        android:layout_marginTop="8dip"
+		        android:layout_centerHorizontal="true"
+		        android:textSize="24dp"
+		        android:textColor="@color/white"
+		        android:text="@string/setting_Logout_str" />
+	        
+	        <Button
+		        android:id="@+id/setSpacenote"
+		        android:background="@drawable/big_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="48dip"
+		        android:layout_marginLeft="8dip"
+		        android:layout_marginRight="8dip"
+		        android:layout_marginTop="8dip"
+		        android:layout_centerHorizontal="true"
+		        android:layout_below="@id/logout"
+		        android:textSize="24dp"
+		        android:textColor="@color/white"
+		        android:text="@string/setting_Spacenote_str" />
+	        
+	        <Button
+		        android:id="@+id/getGreat"
+		        android:background="@drawable/big_button"
+		        android:layout_width="fill_parent"
+		        android:layout_height="48dip"
+		        android:layout_margin="8dip"
+		        android:layout_centerHorizontal="true"
+		        android:layout_below="@id/setSpacenote"
+		        android:textSize="24dp"
+		        android:textColor="@color/white"
+		        android:text="@string/setting_getGreat_str" />
+	        
+	    </RelativeLayout>
+		
+	    <RelativeLayout android:id="@+id/findFriendLayout"
+	    		android:visibility="gone"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+	        
+	        <Button
+		        android:id="@+id/viaAccount"
+            		android:background="@drawable/big_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="48dip"
+		        android:layout_marginLeft="8dip"
+		        android:layout_marginRight="8dip"
+		        android:layout_marginTop="8dip"
+		        android:layout_centerHorizontal="true"
+		        android:textSize="24dp"
+                android:textColor="@color/white"
+		        android:text="@string/findfriendViaAcc" />
+		
+		    <Button
+		        android:id="@+id/viaArea"
+            		android:background="@drawable/big_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="48dip"
+		        android:layout_margin="8dip"
+		        android:layout_centerHorizontal="true"
+				android:layout_below="@id/viaAccount" 
+				android:textSize="24dp"
+                android:textColor="@color/white"
+		        android:text="@string/findfriendViaArea" />
+		
+		    <Button
+		        android:id="@+id/viaMap"
+            		android:background="@drawable/big_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="48dip"
+		        android:layout_margin="8dip"
+		        android:layout_centerHorizontal="true"
+				android:layout_below="@id/viaArea" 
+				android:textSize="24dp"
+                android:textColor="@color/white"
+		        android:text="@string/findfriendViaMap" />
+	        
+	    </RelativeLayout>
+	    
+	    
+		<ListView android:id="@+id/listViewLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" />
+	
+	</LinearLayout>
+
+	    
+	
+	    
+    
+
+</RelativeLayout>
