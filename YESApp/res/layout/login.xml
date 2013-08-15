@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/StyleLayout"
+    android:background="@drawable/main_page"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Login" >
+
+    <Button
+        android:id="@+id/logo"
+        android:layout_width="240dp"
+        android:layout_height="66dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/login_title" />
+
+    <ScrollView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:scrollbarSize="0dp"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:id="@+id/rl_ap"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_account"
+                style="@style/StyleWrapContent" >
+
+                <TextView
+                    android:id="@+id/tv_login_account"
+                    style="@style/StyleLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/login_account" />
+
+                <EditText
+                    android:id="@+id/et_login_account"
+                    style="@style/StyleInput"
+                    android:layout_width="180dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/et_login_account" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_password"
+                style="@style/StyleWrapContent"
+                android:layout_below="@id/rl_account"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_login_password"
+                    style="@style/StyleLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/login_password" />
+
+                <EditText
+                    android:id="@+id/et_login_password"
+                    style="@style/StyleInput"
+                    android:inputType="textPassword"
+                    android:layout_width="180dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/et_login_password" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_buttons"
+				android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/rl_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/center"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:id="@+id/btn_login_clear"
+                    style="@style/StyleButton"
+                    android:layout_toLeftOf="@id/center"
+                    android:layout_marginRight="10dp"
+					android:layout_width="140dp"
+                    android:text="@string/login_clear" />
+
+                <Button
+                    android:id="@+id/btn_login_login"
+                    style="@style/StyleButton"
+                    android:layout_toRightOf="@id/center"
+                    android:layout_marginLeft="10dp"
+					android:layout_width="140dp"
+                    android:text="@string/login_login" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

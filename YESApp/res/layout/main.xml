@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
+    style="@style/StyleLayout"
+    android:layout_width="wrap_content"
+    android:background="@drawable/main_page" >
+
+    <LinearLayout
+        android:id="@+id/ll_ContentChield_1"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="120dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_battery"
+            style="@style/StyleWrapContent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_battery"
+                style="@style/StyleFunctionButton"
+                android:background="@drawable/battery_button" />
+
+            <TextView
+                android:id="@+id/tv_battery"
+                style="@style/StyleFunctionTextView"
+                android:text="@string/main_battery" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_reservation_navi"
+            style="@style/StyleWrapContent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_reservation_navi"
+                style="@style/StyleFunctionButton"
+                android:background="@drawable/reservation_navi_button" />
+
+            <TextView
+                android:id="@+id/tv_reservation_navi"
+                style="@style/StyleFunctionTextView"
+                android:text="@string/main_reservation_navi" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fastbooking"
+            style="@style/StyleWrapContent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_fastbooking"
+                style="@style/StyleFunctionButton"
+                android:background="@drawable/fastbooking_button" />
+
+            <TextView
+                android:id="@+id/tv_fastbooking"
+                style="@style/StyleFunctionTextView"
+                android:text="@string/main_fastbooking" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ContentChield_2"
+        style="@style/StyleWrapContent"
+        android:gravity="fill_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_booking_list"
+            style="@style/StyleWrapContent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_booking_list"
+                style="@style/StyleFunctionButton"
+                android:background="@drawable/booking_list_button" />
+
+            <TextView
+                android:id="@+id/tv_booking_list"
+                style="@style/StyleFunctionTextView"
+                android:text="@string/main_booking_list" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_airconon"
+            style="@style/StyleWrapContent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_airconon"
+                style="@style/StyleFunctionButton"
+                android:background="@drawable/airconon_button" />
+
+            <TextView
+                android:id="@+id/tv_airconon"
+                style="@style/StyleFunctionTextView"
+                android:text="@string/main_airconon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_recommendation"
+            style="@style/StyleWrapContent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_recommendation"
+                style="@style/StyleFunctionButton"
+                android:background="@drawable/recommendation_button" />
+
+            <TextView
+                android:id="@+id/tv_recommendation"
+                style="@style/StyleFunctionTextView"
+                android:text="@string/main_recommendation" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_ContentChield_3"
+        style="@style/StyleWrapContent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp" 
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/ll_charging_history"
+            style="@style/StyleWrapContent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_charging_history"
+                style="@style/StyleFunctionButton"
+                android:background="@drawable/charging_history_button" />
+
+            <TextView
+                android:id="@+id/tv_charging_history"
+                style="@style/StyleFunctionTextView"
+                android:text="@string/main_charging_history" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/ll_history_message"
+            style="@style/StyleWrapContent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_history_message"
+                style="@style/StyleFunctionButton"
+                android:background="@drawable/history_message_button" />
+
+            <TextView
+                android:id="@+id/tv_history_message"
+                style="@style/StyleFunctionTextView"
+                android:text="@string/main_history_message" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/ll_customer_service"
+            style="@style/StyleWrapContent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_customer_service"
+                style="@style/StyleFunctionButton"
+                android:background="@drawable/customer_service_button" />
+
+            <TextView
+                android:id="@+id/tv_customer_service"
+                style="@style/StyleFunctionTextView"
+                android:text="@string/main_customer_service" />
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_ContentChield_4"
+        style="@style/StyleWrapContent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" 
+        android:visibility="gone" >
+        
+        <LinearLayout
+            android:id="@+id/ll_qrcode"
+            style="@style/StyleWrapContent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_qrcode"
+                style="@style/StyleFunctionButton"
+                android:background="@drawable/qrcode_button" />
+
+            <TextView
+                android:id="@+id/tv_qrcode"
+                style="@style/StyleFunctionTextView"
+                android:text="@string/main_qrcode" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

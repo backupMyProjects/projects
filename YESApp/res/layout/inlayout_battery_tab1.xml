@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarSize="0dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_one"
+        style="@style/StyleMatchParent" >
+
+        <TextView
+            android:id="@+id/tv_car_charge_state"
+            style="@style/StyleLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@null" />
+        <!--
+    <TextView
+        android:id="@+id/tv_update_date"
+		style="@style/StyleLabel"
+		android:layout_below="@id/tv_car_charge_state"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:text="tv_update_date" />
+    
+    <TextView
+        android:id="@+id/tv_charge_method"
+		style="@style/StyleLabel"
+		android:layout_below="@id/tv_update_date"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="tv_charge_method" />
+    
+    <TextView
+        android:id="@+id/tv_charge_time"
+		style="@style/StyleLabel"
+		android:layout_below="@id/tv_charge_method"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="tv_charge_time" />
+    
+    <TextView
+        android:id="@+id/tv_drive_length"
+		style="@style/StyleLabel"
+		android:layout_below="@id/tv_charge_time"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="tv_charge_time" />
+        -->
+
+        <Button
+            android:id="@+id/btn_update"
+            style="@style/StyleButton"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="@string/battery_tab1_update" />
+    </RelativeLayout>
+
+</ScrollView>

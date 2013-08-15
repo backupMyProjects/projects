@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">車主App</string>
+    
+    <string name="menu_logout">登出</string>
+    <string name="menu_document">說明</string>
+    <string name="menu_about">關於</string>
+    <string name="menu_setting">設定</string>
+    
+    <string name="login_account">帳號</string>
+    <string name="login_password">密碼</string>
+    <string name="login_clear">清除</string>
+    <string name="login_login">登入</string>
+    
+    <string name="main_battery">電量狀態</string>
+    <string name="main_reservation_navi">充電站查詢預約</string>
+    <string name="main_fastbooking">快速預約</string>
+    <string name="main_booking_list">我的預約單</string>
+    <string name="main_airconon">冷氣預冷</string>
+    <string name="main_recommendation">推薦行程</string>
+    <string name="main_charging_history">充電記錄查詢</string>
+    <string name="main_history_message">歷史訊息</string>
+    <string name="main_customer_service">聯絡客服</string>
+    <string name="main_qrcode">QR Code</string>
+    
+    <string name="battery_tab1">電量狀態</string>
+    <string name="battery_tab2">車輛狀態</string>
+    <string name="battery_tab1_update">更新</string>
+    
+    <string name="reservation_tab1">充電站清單</string>
+    <string name="reservation_tab2">地圖查詢</string>
+    <string name="reservation_tab3">我的最愛</string>
+    
+    <string name="charginghistory_tab1">充電紀錄</string>
+    <string name="charginghistory_tab2">預約記錄</string>
+    
+    <string name="loading">更新中請稍等...</string>
+    <string name="login">正在登入...</string>
+    <string name="fail_login">登入失敗，帳號或密碼有誤</string>
+    <string name="et_login_account">9739e2</string>
+    <string name="et_login_password">12208883</string>
+
+</resources>

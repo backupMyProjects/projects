@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="darkgray">#FF444444</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="ctblue">#006691</color>
+    <color name="liteblue">#53aad3</color>
+    <color name="ctheavyblue">#ff215379</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#888888</color>
+    <color name="green">#226691</color>
+    <color name="orange">#ff8e00</color>
+    <color name="green1">#83a741</color>
+    <color name="green2">#e6fb95</color>
+    <color name="green3">#b6cb65</color>
+    <color name="g_button_start">#348e08</color>
+    <color name="g_button_end">#c4ffa8</color>
+    
+    <color name="FONT_COLOR">#c4ffa8</color>
+</resources>

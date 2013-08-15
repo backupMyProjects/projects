@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title"
+    style="@style/StyleTitleBar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/StyleTitle"
+        android:text="tv_title" />
+
+    <Button
+        android:id="@+id/btn_info"
+        style="@style/StyleInfo" />
+
+    <Button
+        android:id="@+id/btn_trace"
+        style="@style/StyleTrace" />
+
+</RelativeLayout>

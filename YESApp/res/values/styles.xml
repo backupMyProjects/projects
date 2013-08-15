@@ -1,0 +1,140 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+
+    <!-- Style theme. -->
+
+    <style name="StyleWrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="StyleMatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    
+
+    <style name="StyleBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    
+
+    <style name="StyleLayout" parent="StyleMatchParent">
+        <item name="android:background">@drawable/style_background</item>
+    </style>
+
+    <style name="StyleTitleBar" parent="StyleMatchParent">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/style_background_reverse</item>
+    </style>
+    
+    <style name="StyleFooterBar" parent="StyleTitleBar">
+        <item name="android:background">@drawable/style_background_reverse</item>
+    </style>
+    
+    <style name="StyleInfo">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">@drawable/info_icon</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+    
+    <style name="StyleTrace">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:background">@drawable/style_button</item>
+        <item name="android:alpha">0.5</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    
+    <style name="StyleMenuButton">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">@drawable/info_icon</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="StyleTitle" parent="StyleWhiteCarve">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/text_label</item>
+    </style>
+    
+    <style name="StyleWhiteCarve" parent="StyleShadow">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="StyleShadow">
+        <item name="android:textColor">@color/FONT_COLOR</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="StyleLabel" parent="StyleShadow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_label</item>
+    </style>
+
+    <style name="StyleInput" parent="StyleShadow">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_label</item>
+        <item name="android:background">@drawable/style_backinput</item>
+    </style>
+
+    <style name="StyleButton" parent="StyleShadow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/style_button</item>
+    </style>
+    
+    <style name="StyleFunctionButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+    
+    <style name="StyleFunctionTextView">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_function_label</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    
+
+</resources>

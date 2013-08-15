@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarSize="0dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_fastbooking"
+        style="@style/StyleMatchParent" >
+        
+    	<include android:id="@+id/titlebar" layout="@layout/sublayout_titlebar" />
+
+        <TextView
+            android:id="@+id/tv_fastbooking"
+            style="@style/StyleLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="@null" />
+    </RelativeLayout>
+
+</ScrollView>
