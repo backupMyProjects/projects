@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/newsRowLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip">
+    
+    <ImageView android:id="@+id/newsIcon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="2dip"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+    <TextView android:id="@+id/newsTitle"
+        android:text="SongOrder" 
+		android:paddingLeft="5dip"
+        android:textColor="@color/ctblue"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+		android:layout_toRightOf="@id/newsIcon"
+        android:layout_width="wrap_content" android:layout_height="24dip" />
+        
+    <TextView android:id="@+id/newsContent"
+        android:text="My Application" 
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:minLines="2"
+        android:layout_below="@id/newsTitle"
+        android:layout_alignLeft="@id/newsTitle"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        
+    <ImageView android:id="@+id/newsMediaThumb"
+        android:gravity="center_vertical"
+		android:paddingLeft="5dip"
+        android:layout_marginRight="2dip"
+        android:layout_below="@id/newsContent"
+        android:layout_alignLeft="@id/newsContent"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+    
+
+</RelativeLayout>
+

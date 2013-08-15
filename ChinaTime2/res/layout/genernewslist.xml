@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout android:id="@+id/evenlistLayout" 
+	android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<RelativeLayout android:id="@+id/bannerLayout"
+		android:background="@drawable/banner_content"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true">
+		
+		<ImageButton android:id="@+id/modulemenu"
+			android:background="#00000000" 
+			android:src="@drawable/bt_menu"
+			android:paddingLeft="8dp"
+			android:layout_centerVertical="true" 
+			android:layout_alignParentLeft="true"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		
+		<TextView android:id="@+id/moduletitle"
+			android:textColor="@color/white"
+			android:layout_centerVertical="true" 
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="60sp"
+			android:textSize="20dip"
+			android:layout_height="wrap_content" android:layout_width="wrap_content" />
+		
+		<ProgressBar 
+	        android:id="@+android:id/progress_small_title"
+        	style="?android:attr/progressBarStyleSmallTitle"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+	        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+		
+	</RelativeLayout>
+	
+	<LinearLayout android:id="@+id/itemsLayout" 
+		android:layout_below="@id/bannerLayout" 
+		android:layout_centerHorizontal="true"
+		android:background="@drawable/bk_tabbar"
+		android:gravity="center_horizontal"
+		android:layout_width="fill_parent" android:layout_height="36dp">
+		
+		<HorizontalScrollView
+			android:id="@+id/itemsScrollBox"
+        	android:layout_width="fill_parent" android:layout_height="wrap_content">
+        	
+        	<LinearLayout android:id="@+id/itemInnerLayout" 
+				android:layout_centerHorizontal="true"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		
+		
+		</HorizontalScrollView>
+		
+	</LinearLayout>
+	
+	<RelativeLayout android:id="@+id/itemContent" 
+		android:layout_below="@id/itemsLayout" 
+		android:layout_centerHorizontal="true"
+		android:background="@drawable/bk_menu"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		
+		<ListView android:id="@+id/contentList"
+				android:textColor="@color/darkgray"
+				android:layout_width="fill_parent" android:layout_height="fill_parent" />
+				
+		
+		
+	
+	</RelativeLayout>
+	
+	
+</RelativeLayout>

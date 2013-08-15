@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/HomeLayout"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<RelativeLayout android:id="@+id/bannerLayout"
+		android:background="@drawable/banner_menu"
+		android:layout_width="fill_parent" android:layout_height="44sp"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true">
+		
+		<TextView android:id="@+id/title" android:text=""
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+		</TextView>
+		
+		<ImageButton android:id="@+id/backHome"
+			android:background="#00000000" 
+			android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+		</ImageButton>
+		
+	</RelativeLayout>
+	
+	<RelativeLayout android:id="@+id/contentLayout" 
+		android:layout_below="@id/bannerLayout" android:layout_centerHorizontal="true"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+	
+		<RelativeLayout android:id="@+id/playerLayout"
+			android:background="@drawable/bk_menu"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+			
+			
+			<ImageView android:id="@+id/tab"
+			android:layout_alignParentBottom="true"
+			android:src="@drawable/bk_tabbar"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				
+			<GridView android:id="@+id/moduleContent"
+				android:background="#00000000" 
+				android:layout_above="@+id/tab"
+				android:numColumns="3"
+				android:gravity="center"
+				android:layout_width="fill_parent" android:layout_height="fill_parent" />
+			
+			
+		</RelativeLayout>
+			
+	</RelativeLayout>
+	
+</RelativeLayout>

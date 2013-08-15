@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">旺旺中時</string>
+    
+    <string name="focusnews">焦點</string>
+    <string name="camera">開麥拉</string>
+    <string name="video">影音新聞</string>
+    <string name="ctitv">中天娛樂</string>
+    <string name="news">中時新聞</string>
+    <string name="showbiz">娛樂新聞</string>
+    <string name="life">樂活</string>
+    <string name="money">財經</string>
+    <string name="blog">部落格</string>
+    
+    <string name="ctv">中國電視</string>
+    
+</resources>

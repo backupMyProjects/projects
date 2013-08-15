@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout android:id="@+id/evenlistLayout" 
+	android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<RelativeLayout android:id="@+id/bannerLayout"
+		android:background="@drawable/banner_content_2"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true">
+		
+		<ImageButton android:id="@+id/back2List"
+			android:background="#00000000" 
+			android:src="@drawable/bt_back"
+			android:paddingLeft="3dp"
+			android:layout_centerVertical="true" 
+			android:layout_alignParentLeft="true"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		
+		<TextView android:id="@+id/title" 
+			android:layout_centerVertical="true" 
+			android:layout_centerHorizontal="true"
+			android:layout_marginRight="50sp"
+			android:textSize="20dip"
+			android:layout_height="wrap_content" android:layout_width="wrap_content" />
+		
+	</RelativeLayout>
+	
+	
+	<RelativeLayout android:id="@+id/itemLayout" 
+		android:layout_below="@id/bannerLayout" 
+		android:layout_centerHorizontal="true"
+		android:background="@drawable/bk_menu"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		
+		<ScrollView android:id="@+id/itemsScrollBox" 
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			
+			<RelativeLayout  android:id="@+id/itemsContentLayout"
+				android:layout_width="fill_parent" android:layout_height="fill_parent">
+				
+				<ImageView android:id="@+id/itemView"
+			        android:layout_alignParentTop="true"
+			        android:layout_centerHorizontal="true"
+			        android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				
+				<TextView android:id="@+id/itemTitle"
+					android:layout_below="@id/itemView"
+					android:textSize="20dp"
+					android:paddingLeft="10dp"
+					android:textColor="@color/ctblue"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+					
+				<TextView android:id="@+id/itemDate"
+					android:layout_below="@id/itemTitle"
+					android:textSize="12dp"
+					android:paddingLeft="20dp"
+					android:paddingTop="8dp"
+					android:textColor="@color/black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+					
+				<TextView android:id="@+id/itemDesc"
+					android:layout_below="@id/itemDate"
+					android:textSize="16dp"
+					android:paddingLeft="20dp"
+					android:paddingTop="8dp"
+					android:paddingRight="20dp"
+					android:textColor="@color/black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			
+			</RelativeLayout>
+			
+			
+		
+		</ScrollView>
+		
+	
+	</RelativeLayout>
+	
+	
+</RelativeLayout>
